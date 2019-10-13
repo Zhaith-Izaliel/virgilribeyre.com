@@ -1,14 +1,16 @@
+
+
 function validation(name, value) {
   var body = {};
   body[name] = value;
-  return rxjs.ajax.ajax({url: 'http://localhost:8080/validate', method: 'POST', body: body, headers: {
+  return rxjs.ajax.ajax({url: '/validate', method: 'POST', body: body, headers: {
     "Content-Type": "application/json"
   }});
 }
 
 function validationAll(allValues) {
   var body = allValues;
-  return rxjs.ajax.ajax({url: 'http://localhost:8080/form', method: 'POST', body: body, headers: {
+  return rxjs.ajax.ajax({url: '/form', method: 'POST', body: body, headers: {
     "Content-Type": "application/json"
   }});
 }
