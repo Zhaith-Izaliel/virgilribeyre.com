@@ -106,12 +106,6 @@ body, html {
   box-shadow: 0px 0px 30px rgba(0,0,0,0.70);
 }
 
-#inner-to-top-button {
-  position: relative;
-  top: 50%;
-  transform: translateY(-85%);
-}
-
 @media only screen and (min-device-width: 1024px) {
   .display-container {
     position: relative;
@@ -322,7 +316,7 @@ body, html {
 }
 
 .form-message-wrapper {
-  padding: 2.75rem 2.75rem 0 0;
+  padding: 2rem 2rem 0 0;
   position: relative;
 }
 

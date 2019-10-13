@@ -20,10 +20,10 @@ head
   #modal-skills.relative.p-8.bg-white.my-4.mx-auto.flex-col.flex.rounded.overflow-auto(class='w-5/6 lg:w-1/2')
     a.outline-none.close-modal(href='javascript:void(0);')
       i.fa.fa-times-circle.text-red-700.text-4xl.fixed.top-0.right-0.m-4.hidden.cursor-pointer.transition-all.transition-250.transition-ease-in-out(class='hover:text-red-800 lg:block')
-    .w-full.m-8
+    .w-full.m-auto
       h3.text-center.khand-font.title.text-3xl(class='lg:text-5xl') #{i18n.skills.modal.title}
     .w-full.flex.flex-col
-      .w-full.m-2.leading-relaxed
+      .w-full.m-auto.leading-relaxed
         h4.border-b.border-purple-300.mb-6.text-blue-700.text-2xl.tracking-widest.mb-2
           i.fa.fa-laptop
           | #{i18n.skills.modal.skill1.title}
@@ -99,8 +99,9 @@ head
         button.button.float-right.close-modal 
           i.fa.fa-times-circle 
           | #{i18n.skills.modal.close}
-button#to-top-button.flat-wet-asphalt(title="")
-  i#inner-to-top-button.fa.fa-chevron-up
+button#to-top-button.flat-wet-asphalt
+  .flex.item-center.justify-center.m-0.p-0
+    i#inner-to-top-button.fa.fa-chevron-up
 .z-20.text-lg.fixed.w-full(class='lg:text-xl')
   #myNavbar.opacity-75.metro-darken.p-0.m-0.flex
     .flex.order-0.flex-wrap(class='lg:flex-no-wrap')
@@ -377,11 +378,11 @@ button#to-top-button.flat-wet-asphalt(title="")
   .flex.justify-center.items-center
     h5.text-center.text-xl.my-2.mb-3.pb-2.border-b-2.border-blue-800.text-red-900 #{i18n.contact.where}
   .flex.flex-col.flex-no-wrap.items-center.justify-center(class='lg:flex-row')
-    .mx-4.flex-grow.w-full.flex.items-center.justify-center(class='md:w-1/2 lg:justify-end')
+    .mx-auto.flex-grow.w-full.flex.items-center.justify-center(class='md:w-1/2 lg:mx-4 lg:justify-end')
       a(href='https://www.google.fr/maps/place/Nancy+Gare/@48.689383,6.160401,14.25z/data=!4m5!3m4!1s0x479498717541ad5b:0xe43fc026cdfa5ba1!8m2!3d48.6890953!4d6.1759026!10m2!1e3!2e2' target='_blank')
         img.mx-2.w-auto(src='/imgs/Map2.png' alt='Nancy Map')
     //- Contact informations
-    .mx-4.flex-grow.w-full.flex.items-center.justify-center(class='md:w-1/2 lg:justify-start')
+    .mx-auto.flex-grow.w-full.flex.items-center.justify-center(class='md:w-1/2 lg:mx-4 lg:justify-start')
       .text-lg
         p.p-2
           i.fa.fa-map-marker.pr-1
@@ -449,15 +450,15 @@ button#to-top-button.flat-wet-asphalt(title="")
           | #{i18n.contact.form.send}
     p#info-message.invisible.info #{i18n.contact.form.infoMessage}
 //- Footer
-footer.footer-img
-  .flex.flex-row-reverse.flex-no-wrap.items-center.justify-center.text-white.text-lg.metro-darken.opacity-75.py-12(class='lg:text-2xl')
-    .flex-shrink-0.w-auto.self-end.border-l-2.border-color-white.pl-4.mr-24(class='lg:pl-16 lg:mr-32')
+footer.footer-img.w-full
+  .flex.flex-col-reverse.items-center.justify-center.text-lg.metro-darken.opacity-75.py-8(class='lg:text-2xl')
+    .p-2.border-t-2.border-white
       p.tracking-wide
         a.no-underline(href='https://www.linkedin.com/in/virgil-ribeyre-810135196/' target="_blank" class='hover:text-gray-500')
           i.fa.fa-linkedin.pr-1
           | LinkedIn
-    .w-full.ml-2(class='lg:ml-16')
-      p.pb-2.pr-3
+    .w-auto.py-5.px-2.text-center
+      p.pb-2
         i.fa.fa-copyright
         | #{i18n.footer.footer_rights}
       p.pr-3
