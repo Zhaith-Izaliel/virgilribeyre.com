@@ -13,3 +13,4 @@ coverage
 dist
 compiled
 docs
+pre-tailwind.css
