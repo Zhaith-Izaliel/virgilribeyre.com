@@ -1,0 +1,48 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  title #{i18n.title}
+  meta(name='description' content='404 error. Page not found.')
+  link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato')
+  link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Aldrich')
+  link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Fira Mono')
+  link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Khand')
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+  link(rel='stylesheet' href='/css/color-set.css')
+  link(rel='stylesheet' href='/css/tailwind.css')
+  link(rel='stylesheet' href='/css/animate.css')
+  link(rel='stylesheet' href='/css/custom-animation.css')
+  link(rel='stylesheet' href='/css/main.css')
+  link(rel='stylesheet' href='/css/404.css')
+.z-20.text-lg.fixed.w-full(class='lg:text-xl')
+  #myNavbar.metro-darken.p-0.m-0.flex
+    if currentLang === 'fr'
+      .flex.flex-wrap(class='lg:flex-no-wrap')
+        a.block.button(href='/index/fr')
+          i.fa.fa-home
+          |  ACCUEIL
+      .flex.flex-grow.w-auto
+      .flex.flex-wrap(class='lg:flex-no-wrap')
+        a.block.button(href='/404/en')
+          i.fa.fa-language
+          |  ENGLISH
+    else
+      .flex.flex-wrap(class='lg:flex-no-wrap')
+        a.block.button(href='/index/en')
+          i.fa.fa-home
+          |  HOME
+      .flex.flex-grow.w-auto
+      .flex.flex-wrap(class='lg:flex-no-wrap')
+        a.block.button(href='/404/fr')
+          i.fa.fa-language
+          |  FRANÇAIS
+.bgimg-1.w-screen.h-screen.flex.items-center.justify-center
+  .w-screen.p-6.metro-darken.flex.flex-col.items-center.justify-center(class='xl:flex-row' style='background-color: rgba(29, 29, 29, 0.90)')
+    .w-auto.mx-4
+      img(src='/imgs/404.jpg' alt='404-gabriel' class="animated fadeInLeft custom-duration")
+    .w-auto.mx-2.overflow-hidden
+      h1.text-4xl.aldrich-font.text-blue-400.animated.fadeInRight.custom-duration(class='xl:text-6xl') #{i18n.text.title}
+      hr
+      h2.text-3xl.khand-font.text-indigo-300.animated.fadeInRight.custom-duration(class='xl:text-5xl') #{i18n.text.subtitle}
+      h3.text-2xl.animated.fadeInRight.custom-duration(class='xl:text-4xl') #{i18n.text.text}

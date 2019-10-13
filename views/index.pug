@@ -1,0 +1,473 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  title Virgil RIBEYRE
+  meta(name='description' content='Virgil RIBEYRE is a freelancer webdesigner, aspiring Game Designer and able to design ergonomic and pleasant web sites and applications for all your projects.')
+  link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato')
+  link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Aldrich')
+  link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Fira Mono')
+  link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Khand')
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+  link(rel='stylesheet' href='/css/color-set.css')
+  link(rel='stylesheet' href='/css/tailwind.css')
+  link(rel='stylesheet' href='/css/animate.css')
+  link(rel='stylesheet' href='/css/custom-animation.css')
+  link(rel='stylesheet' href='/css/main.css')
+  //- Extracted Style
+//- NB Skills Modal
+.fixed.h-screen.w-screen.overflow-auto.z-30.flex.modal.hidden.modal-background
+  #modal-skills.relative.p-8.bg-white.my-4.mx-auto.flex-col.flex.rounded.overflow-auto(class='w-5/6 lg:w-1/2')
+    a.outline-none.close-modal(href='javascript:void(0);')
+      i.fa.fa-times-circle.text-red-700.text-4xl.fixed.top-0.right-0.m-4.hidden.cursor-pointer.transition-all.transition-250.transition-ease-in-out(class='hover:text-red-800 lg:block')
+    .w-full.m-8
+      h3.text-center.khand-font.title.text-3xl(class='lg:text-5xl') #{i18n.skills.modal.title}
+    .w-full.flex.flex-col
+      .w-full.m-2.leading-relaxed
+        h4.border-b.border-purple-300.mb-6.text-blue-700.text-2xl.tracking-widest.mb-2
+          i.fa.fa-laptop
+          | #{i18n.skills.modal.skill1.title}
+        p.text-base(class='lg:text-lg')
+          | #{i18n.skills.modal.skill1.text1}
+          span.emphasis #{i18n.skills.modal.skill1.em1}
+          | #{i18n.skills.modal.text2}
+          span.emphasis #{i18n.skills.modal.skill1.em2}
+          | #{i18n.skills.modal.skill1.text3}
+          span.emphasis #{i18n.skills.modal.skill1.em3}
+          | #{i18n.skills.modal.skill1.text4}
+          span.emphasis #{i18n.skills.modal.skill1.em4}
+          | #{i18n.skills.modal.skill1.text5}
+          span.emphasis #{i18n.skills.modal.skill1.em5}
+          | #{i18n.skills.modal.skill1.text6}
+          span.emphasis #{i18n.skills.modal.skill1.em6}
+          | #{i18n.skills.modal.skill1.text7}
+        p.text-base(class='lg:text-lg')
+          | #{i18n.skills.modal.skill1.text8}
+          span.emphasis #{i18n.skills.modal.skill1.em7}
+          | #{i18n.skills.modal.skill1.text9}
+          span.emphasis #{i18n.skills.modal.skill1.em8}
+          | #{i18n.skills.modal.skill1.text10}
+          span.emphasis #{i18n.skills.modal.skill1.em9}
+          | #{i18n.skills.modal.skill1.text11}
+          span.emphasis #{i18n.skills.modal.skill1.em10}
+          | #{i18n.skills.modal.skill1.text12}
+      .w-full.m-2.leading-relaxed
+        h4.border-b.border-purple-300.mb-6.text-blue-700.text-2xl.tracking-widest.mb-2
+          i.fa.fa-code
+          | #{i18n.skills.modal.skill2.title}
+        p.text-base(class='lg:text-lg')
+          | #{i18n.skills.modal.skill2.text1}
+          span.emphasis #{i18n.skills.modal.skill2.em1}
+          | #{i18n.skills.modal.skill2.text2}
+        p.text-base(class='lg:text-lg')
+          | #{i18n.skills.modal.skill2.text3}
+          span.emphasis #{i18n.skills.modal.skill2.em2}
+          | #{i18n.skills.modal.skill2.text4}
+          span.emphasis #{i18n.skills.modal.skill2.em3}
+          | #{i18n.skills.modal.skill2.text5}
+      .w-full.m-2
+        h4.border-b.border-purple-300.mb-6.text-blue-700.text-2xl.tracking-widest.mb-2
+          i.fa.fa-code
+          | #{i18n.skills.modal.skill3.title}
+        p.text-base(class='lg:text-lg')
+          | #{i18n.skills.modal.skill3.text1}
+          span.emphasis #{i18n.skills.modal.skill3.em1}
+          | #{i18n.skills.modal.skill3.text2}
+      .w-full.m-2
+        h4.border-b.border-purple-300.mb-6.text-blue-700.text-2xl.tracking-widest.mb-2
+          i.fa.fa-terminal
+          | #{i18n.skills.modal.skill4.title}
+        p.text-base(class='lg:text-lg')
+          | #{i18n.skills.modal.skill4.text1} 
+          span.emphasis #{i18n.skills.modal.skill4.em1}
+          | #{i18n.skills.modal.skill4.text2}
+          span.emphasis #{i18n.skills.modal.skill4.em2}
+          | #{i18n.skills.modal.skill4.text3}
+        p.text-base(class='lg:text-lg')
+          | #{i18n.skills.modal.skill4.text4}
+          span.emphasis #{i18n.skills.modal.skill4.em3}
+          | #{i18n.skills.modal.skill4.text5}
+      .w-full.m-2
+        h4.border-b.border-purple-300.mb-6.text-blue-700.text-2xl.tracking-widest.mb-2
+          i.fa.fa-object-group
+          | #{i18n.skills.modal.skill5.title}
+        p.text-base(class='lg:text-lg')
+          | #{i18n.skills.modal.skill5.text1} 
+          span.emphasis #{i18n.skills.modal.skill5.em1}
+          | #{i18n.skills.modal.skill5.text2}
+      .text-xl.my-5
+        button.button.float-right.close-modal 
+          i.fa.fa-times-circle 
+          | #{i18n.skills.modal.close}
+button#to-top-button.flat-wet-asphalt(title="")
+  i#inner-to-top-button.fa.fa-chevron-up
+.z-20.text-lg.fixed.w-full(class='lg:text-xl')
+  #myNavbar.opacity-75.metro-darken.p-0.m-0.flex
+    .flex.order-0.flex-wrap(class='lg:flex-no-wrap')
+      a.block.button.button-responsive-function(class='xl:hidden' href='javascript:void(0);' title='Toggle Navigation Menu')
+        i.fa.fa-bars
+    .flex.order-3.flex-wrap(class='xl:order-none lg:flex-no-wrap')
+      button.block.button.home-button
+        i.fa.fa-home
+    .flex.flex-wrap.m-0(class='xl:flex-no-wrap')
+      button.hidden.button.about-button(class='xl:block')
+        i.fa.fa-user
+        | #{i18n.navbar.about}
+    .flex.flex-wrap(class='xl:flex-no-wrap')
+      button.hidden.button.portfolio-button(class='xl:block')
+        i.fa.fa-th
+        | #{i18n.navbar.portfolio}
+    .flex.flex-wrap(class='xl:flex-no-wrap')
+      button.hidden.button.studies-button(class='xl:block')
+        i.fa.fa-mortar-board
+        | #{i18n.navbar.studies}
+    .flex.flex-wrap(class='xl:flex-no-wrap')
+      button.hidden.button.skills-button(class='xl:block')
+        i.fa.fa-star-half-full
+        | #{i18n.navbar.skills}
+    .flex.flex-wrap(class='xl:flex-no-wrap')
+      button.hidden.button.experiences-button(class='xl:block')
+        i.fa.fa-suitcase
+        | #{i18n.navbar.experiences}
+    .flex.flex-wrap(class='xl:flex-no-wrap')
+      button.hidden.button.contact-button(class='xl:block')
+        i.fa.fa-envelope
+        | #{i18n.navbar.contact}
+    .flex.order-2.flex-grow.w-auto(class='xl:order-none')
+    .flex.flex-wrap(class='lg:flex-no-wrap')
+      if currentLang === 'en'
+        a.hidden.button(href='/index/fr' class='xl:block')
+          i.fa.fa-language
+          span 
+          | FRANÇAIS
+      else
+        a.hidden.button(href='/index/en' class='xl:block')
+          i.fa.fa-language
+          span 
+          | ENGLISH
+  //- Navbar on small screens
+  #navDemo(style="display: none;")
+    button.about-button.w-full.button-responsive.button-responsive-function
+      i.fa.fa-user
+      |  #{i18n.navbar.about}
+    button.portfolio-button.w-full.button-responsive.button-responsive-function
+      i.fa.fa-th
+      |  #{i18n.navbar.portfolio}
+    button.studies-button.w-full.button-responsive.button-responsive-function
+      i.fa.fa-mortar-board
+      |  #{i18n.navbar.studies}
+    button.skills-button.w-full.button-responsive.button-responsive-function
+      i.fa.fa-star-half-full
+      |  #{i18n.navbar.skills}
+    button.experiences-button.w-full.button-responsive.button-responsive-function
+      i.fa.fa-suitcase
+      |  #{i18n.navbar.experiences}
+    button.contact-button.w-full.button-responsive.button-responsive-function
+      i.fa.fa-envelope
+      |  #{i18n.navbar.contact}
+    if currentLang === 'en'
+      a(href='/index/fr')
+        button.w-full.button-responsive.button-responsive-function
+          i.fa.fa-language
+          span
+          | FRANÇAIS
+    else 
+      a(href='/index/en')
+        button.w-full.button-responsive.button-responsive-function
+          i.fa.fa-language
+          span
+          | ENGLISH
+//- NB Home Section
+#home.bgimg-1.w-full.h-full.logo.display-container.flex.flex-col.items-center.justify-center(class='lg:h-screen')
+  .w-full.mt-16.box-home.display-right.overflow-x-hidden.z-10.overflow-hidden(class='lg:mt-0 lg:w-1/2')
+    h3.text-3xl.text-white.aldrich-font.animated.fadeInUp.faster(class='md:text-4xl lg:text-6xl') #{i18n.home.name}
+    h4.text-2xl.text-white.fira-mono-font.animated.fadeInUp.fast(class='md:text-3xl lg:text-5xl')
+      span.dynamic-age
+      |  #{i18n.home.age}
+    .flex.justify-center
+      hr.animated.fadeIn.delay-1s(style='width:70%')
+    h4.text-2xl.text-white.khand-font.custom-fadeInRight(class='md:text-3xl lg:text-5xl') #{i18n.home.title1}
+    h4.text-2xl.text-white.khand-font.custom-fadeInRight(class='md:text-3xl lg:text-5xl') #{i18n.home.title2}
+  .w-full.display-bottomleft(class='lg:w-1/2')
+    .flex.items-center.justify-center
+      img.photo.animated.fadeIn.slow(src='/imgs/VR-Large-First.png' alt='virgil-ribeyre-2019.png')
+//- NB About Section
+#about.w-full.mx-auto.py-24(class='lg:w-1/2 lg:px-2')
+  .text-center.mx-3(class='mg:mx-auto')
+    h4.text-4xl.khand-font.title(class='lg:text-6xl')
+      | #{i18n.about.title}
+    p.subtitle
+      em
+        span.emphasis #{i18n.about.subtitle.em1}
+        | #{i18n.about.subtitle.text1} 
+        span.emphasis #{i18n.about.subtitle.em2}
+        | #{i18n.about.subtitle.text2}
+        br
+        | #{i18n.about.subtitle.text3}
+        span.emphasis #{i18n.about.subtitle.em3}
+        | #{i18n.about.subtitle.text4}
+  .px-2.text-base.mx-3(class='lg:text-lg lg:mx-0')
+    p
+      | #{i18n.about.infos.text1}
+      span.emphasis #{i18n.about.infos.em1}
+      i #{i18n.about.infos.i1}
+      | #{i18n.about.infos.text2}
+      span.emphasis #{i18n.about.infos.em2}
+      | #{i18n.about.infos.text3}
+      a.underline.emphasis(href='https://-institut-sciences-digitales.fr/courses/licence-3-miashs/' class='hover:opacity-75') #{i18n.about.infos.link}
+      | #{i18n.about.infos.text4}
+      span.emphasis #{i18n.about.infos.em3}
+      | #{i18n.about.infos.text5}
+      span.emphasis #{i18n.about.infos.em4}
+      | #{i18n.about.infos.text6}
+  .note.mx-3(class='lg:mx-0')
+    p
+      | #{i18n.about.panel.text1}
+      span.emphasis #{i18n.about.panel.em1}
+      | #{i18n.about.panel.text2}
+      span.emphasis #{i18n.about.panel.em1}
+      | #{i18n.about.panel.text3}
+  .flex.flex-row
+    .w-full.mx-2(class='xl:w-1/2')
+      img.rounded-lg(src='/imgs/illus1.jpg' alt='Illustration')
+    //- NB Text hidden on small screens
+    .flex-grow.hidden.mx-5.text(class='w-1/2 xl:block')
+      p
+        | #{i18n.about.text_hidden.text1}
+        .tooltip
+          | #{i18n.about.text_hidden.tooltip.text}
+          span.tooltiptext #{i18n.about.text_hidden.tooltip.infos}
+        |  #{i18n.about.text_hidden.text2}
+        span.emphasis
+          a.underline(href='https://unity.com/fr' class='hover:opacity-75' target='_blank') #{i18n.about.text_hidden.link1}
+        | #{i18n.about.text_hidden.text3}
+        span.emphasis
+          a.underline(href='https://ldjam.com/' class='hover:opacity-75' target='_blank') #{i18n.about.text_hidden.link2}
+        | #{i18n.about.text_hidden.text4}
+//- NB Parallax (Portfolio)
+#portfolio.bgimg-2.section-logo-wrapper
+  .section-logo.text-3xl.w-screen(class='lg:text-5xl lg:w-auto')
+    h3.section-logo-title.aldrich-font #{i18n.portfolio.title}
+.w-full.mx-auto.py-24(class='lg:w-1/2 lg:px-2')
+  .text-center.mx-3(class='mg:mx-auto')
+    h3.text-4xl.khand-font.title(class='lg:text-6xl') #{i18n.portfolio.header}
+    p.subtitle
+      em #{i18n.portfolio.subtitle}
+  .note.mx-3(class='lg:mx-0')
+    p
+      | #{i18n.portfolio.github.text1}
+      a(href='https://-github.com/Zhaith-Izaliel' target='_blank')
+        span.emphasis.underline(class='hover:opacity-75') #{i18n.portfolio.github.link}
+      | #{i18n.portfolio.github.text2}
+//- NB Parallax (Studies)
+#studies.bgimg-3.section-logo-wrapper
+  .section-logo.text-3xl.w-screen(class='lg:text-5xl lg:w-auto')
+    h3.section-logo-title.aldrich-font #{i18n.studies.title}
+.w-full.mx-auto.py-24(class='lg:w-1/2 lg:px-2')
+  .mx-3
+    .text-center.mx-3(class='mg:mx-auto')
+      h3.text-4xl.khand-font.title(class='lg:text-6xl') #{i18n.studies.header}
+      p.subtitle
+        em
+          | #{i18n.studies.subtitle.text1}
+          span.emphasis
+            if currentLang === 'en'
+              span 
+                | 3
+                sup
+                  | rd
+            | #{i18n.studies.subtitle.em}
+          | #{i18n.studies.subtitle.text2}
+    .event-block
+      h4.event-title.text-xl #{i18n.studies.blocks.diploma2.title}
+      hr.event-separator
+      p.event-place #{i18n.studies.blocks.diploma2.place}
+      p.event-date.text-lg #{i18n.studies.blocks.diploma2.date}
+    .event-block
+      h4.event-title.text-xl #{i18n.studies.blocks.diploma1.title}
+      hr.event-separator
+      p.event-place #{i18n.studies.blocks.diploma1.place}
+      p.event-date.text-lg #{i18n.studies.blocks.diploma1.date}
+    //- NOTE: Add new studies here !
+//- NB Parallax (Skills)
+#skills.bgimg-4.section-logo-wrapper
+  .section-logo.text-3xl.w-screen(class='lg:text-5xl lg:w-auto')
+    h3.section-logo-title.aldrich-font #{i18n.skills.title}
+.w-full.mx-auto.py-24(class='lg:w-1/2 lg:px-2')
+  .text-center.mx-3(class='mg:mx-auto')
+    h3.text-4xl.khand-font.title(class='lg:text-6xl') #{i18n.skills.header}
+    p.subtitle
+      em #{i18n.skills.subtitle}
+  .mx-3
+    //- Progress Bar
+    .mb-3
+      p.text-xl.tracking-widest.mb-2
+        i.fa.fa-laptop
+        |  #{i18n.skills.bar.bar1}
+      .metro-light-blue
+        .metro-dark-blue.p-1(style='width:70%') 70%
+    //- Progress Bar
+    .mb-3
+      p.text-xl.tracking-widest.mb-2
+        i.fa.fa-code
+        |  #{i18n.skills.bar.bar2}
+      .metro-light-blue
+        .metro-dark-blue.p-1(style='width:65%') 65%
+    //- Progress Bar
+    .mb-3
+      p.text-xl.tracking-widest.mb-2
+        i.fa.fa-code
+        |  #{i18n.skills.bar.bar3}
+      .metro-light-blue
+        .metro-dark-blue.p-1(style='width:50%') 50%
+    //- Progress Bar
+    .mb-3
+      p.text-xl.tracking-widest.mb-2
+        i.fa.fa-terminal
+        |  #{i18n.skills.bar.bar4}
+      .metro-light-blue
+        .metro-dark-blue.p-1(style='width:80%') 80%
+    //- Progress Bar
+    .mb-5
+      p.text-xl.tracking-widest.mb-2
+        i.fa.fa-object-group
+        |  #{i18n.skills.bar.bar5}
+      .metro-light-blue
+        .metro-dark-blue.p-1(style='width:70%') 70%
+    //- NOTE: Add new skills here !
+  button.button.text-2xl.float-right.mx-4#open-modal
+    i.fa.fa-info-circle
+    |  #{i18n.skills.button}
+//- NB Parallax (Professionnal experiences)
+#experiences.bgimg-5.section-logo-wrapper
+  .section-logo.text-3xl.w-screen(class='lg:text-5xl lg:w-auto')
+    h3.section-logo-title.aldrich-font #{i18n.experiences.title}
+.w-full.mx-auto.py-24(class='lg:w-1/2 lg:px-2')
+  .mx-3
+    .text-center.mx-3(class='mg:mx-auto')
+      h3.text-5xl.khand-font.title(class='lg:text-6xl') #{i18n.experiences.header}
+      p.subtitle
+        em #{i18n.experiences.subtitle}
+      br
+    .event-block
+      h4.event-title.text-xl #{i18n.experiences.exps.exp2.title}
+      hr.event-separator
+      p.event-place #{i18n.experiences.exps.exp2.place}
+      p.event-date.text-lg #{i18n.experiences.exps.exp2.date}
+    .event-block
+      h4.event-title.text-xl #{i18n.experiences.exps.exp1.name}
+      hr.event-separator
+      p.event-place #{i18n.experiences.exps.exp1.place}
+      p.event-date.text-lg #{i18n.experiences.exps.exp1.date}
+    //- NOTE: Add new experiences here !
+//- NB Parallax (Contact)
+#contact.bgimg-6.section-logo-wrapper
+  .section-logo.text-3xl.w-screen(class='lg:text-5xl lg:w-auto')
+    span.section-logo-title.aldrich-font #{i18n.contact.title}
+.w-full.mx-auto.py-24(class='lg:w-1/2 lg:px-2')
+  .text-center.mx-3(class='mg:mx-auto')
+    h3.text-4xl.khand-font.title(class='lg:text-6xl') #{i18n.contact.header}
+    p.subtitle
+      em
+        | #{i18n.contact.subtitle.text1}
+        span.emphasis #{i18n.contact.subtitle.em1}
+        | #{i18n.contact.subtitle.text2}
+        span.emphasis #{i18n.contact.subtitle.em2}
+        | #{i18n.contact.subtitle.text3}
+  .flex.justify-center.items-center
+    h5.text-center.text-xl.my-2.mb-3.pb-2.border-b-2.border-blue-800.text-red-900 #{i18n.contact.where}
+  .flex.flex-col.flex-no-wrap.items-center.justify-center(class='lg:flex-row')
+    .mx-4.flex-grow.w-full.flex.items-center.justify-center(class='md:w-1/2 lg:justify-end')
+      a(href='https://www.google.fr/maps/place/Nancy+Gare/@48.689383,6.160401,14.25z/data=!4m5!3m4!1s0x479498717541ad5b:0xe43fc026cdfa5ba1!8m2!3d48.6890953!4d6.1759026!10m2!1e3!2e2' target='_blank')
+        img.mx-2.w-auto(src='/imgs/Map2.png' alt='Nancy Map')
+    //- Contact informations
+    .mx-4.flex-grow.w-full.flex.items-center.justify-center(class='md:w-1/2 lg:justify-start')
+      .text-lg
+        p.p-2
+          i.fa.fa-map-marker.pr-1
+          | #{i18n.contact.place}
+        p.p-2
+          i.fa.fa-phone.pr-1
+          | #{i18n.contact.phone} +33 6 08 10 69 53
+        p.p-2
+          i.fa.fa-envelope.pr-1
+          | #{i18n.contact.mail} 
+          a.underline(href='https://aemail.com/7lQ' class='hover:opacity-75') #{i18n.contact.click_mail}
+  //- Contact form
+  .flex.flex-col.justify-center.items-center.mx-auto.my-6
+    h5.text-center.text-lg.mt-10.mb-3.pb-2.border-b-2.border-blue-800.text-red-900(class='lg:text-xl') #{i18n.contact.form_title}
+    form#contact-form
+      .my-3.mx-auto(class='lg:mx-0 w-5/6 lg:w-full')
+        p.text-center.text-lg(class='lg:text-xl')
+          | #{i18n.contact.coffee1}
+          i.fa.fa-coffee
+          | #{i18n.contact.coffee2}
+      .mx-auto.flex.flex-col(class='w-5/6 md:w-full lg:flex-row')
+        //- Name input wrapper
+        .w-auto(class='lg:w-1/2')
+          //- First Name Input
+          .flex.flex-col.flex-grow.w-full.form-textfield
+            input#first.form-field(type='text' required='' name='first' value="")
+            label
+              i.fa.fa-user
+              |  #{i18n.contact.form.first}
+          p#firstInvalid.input-info-alert.invisible #{i18n.contact.form.firstInvalid}
+        .w-full(class='lg:w-1/2 lg:ml-2')
+          //- Last Name Input
+          .flex.flex-col.flex-grow.w-full.form-textfield
+            input#last.form-field(type='text' required='' name='last' value="")
+            label
+              i.fa.fa-user
+              | #{i18n.contact.form.last}
+          p#lastInvalid.input-info-alert.invisible #{i18n.contact.form.lastInvalid}
+      .mx-auto.flex.flex-col.flex-no-wrap(class='w-5/6 md:w-full')
+        //- Email Input
+        div
+          .flex.flex-col.flex-grow.w-full.form-textfield
+            input#email.form-field(type='text' required='' name='email' value="")
+            label
+              i.fa.fa-at
+              | #{i18n.contact.form.mail}
+          p#emailInvalid.input-info-alert.invisible #{i18n.contact.form.emailInvalid}
+      .mx-auto.flex.flex-col.flex-no-wrap(class='w-5/6 md:w-full')
+        .flex.w-full.flex-col.flex-grow.form-message-wrapper
+          textarea#message.form-message(rows='7' cols='30' required='' name='message' value="")
+          label.message-label
+            i.fa.fa-envelope-open
+            | #{i18n.contact.form.message}
+        p#messageInvalid.input-info-alert.invisible #{i18n.contact.form.messageInvalid}
+      .mx-auto.flex.flex-col.flex-no-wrap(class='w-5/6 md:w-full')
+        .flex.w-full.flex-col.flex-grow.form-textfield
+          input#captcha.form-field(type='text' required='' name='captcha' value="")
+          label.message-label
+            i.fa.fa-check-circle
+            | #{captcha.op}#{captcha.int1}#{captcha.and}#{captcha.int2}#{captcha.equal}
+        p#captchaInvalid.input-info-alert.invisible #{i18n.contact.form.captchaInvalid}
+      .m-4
+        button#submit-button.button.text-xl.clearfix(class='lg:text-2xl lg:float-right')
+          i.fa.fa-paper-plane
+          | #{i18n.contact.form.send}
+    p#info-message.invisible.info #{i18n.contact.form.infoMessage}
+//- Footer
+footer.footer-img
+  .flex.flex-row-reverse.flex-no-wrap.items-center.justify-center.text-white.text-lg.metro-darken.opacity-75.py-12(class='lg:text-2xl')
+    .flex-shrink-0.w-auto.self-end.border-l-2.border-color-white.pl-4.mr-24(class='lg:pl-16 lg:mr-32')
+      p.tracking-wide
+        a.no-underline(href='#' class='hover:text-gray-500')
+          i.fa.fa-linkedin.pr-1
+          | LinkedIn
+    .w-full.ml-2(class='lg:ml-16')
+      p.pb-2.pr-3
+        i.fa.fa-copyright
+        | #{i18n.footer.footer_rights}
+      p.pr-3
+        | #{i18n.footer.footer_infos}
+        a.underline(href='http://getwallpapers.com/collection/abstract-geometric-wallpapers' target='_blank' class='hover:text-gray-500') GetWallpapers.com
+script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js')
+script(src='https://cdnjs.cloudflare.com/ajax/libs/rxjs/6.5.3/rxjs.umd.min.js')
+script(src='/js/age.js')
+script(src='/js/navBarButtons.js')
+script(src='/js/navBarResponsive.js')
+script(src='/js/scrollToTopButton.js')
+script(src='/js/form.js')
+script(src='/js/modal.js')

@@ -1,0 +1,28 @@
+@-webkit-keyframes custom-fadeInRight {
+  from {
+    right:-400px;
+    opacity: 0;
+  }
+
+  to {
+    right: 0;
+    opacity: 1;
+  }
+}
+@keyframes custom-fadeInRight {
+  from {
+    right: -400px;
+    opacity: 0;
+  }
+
+  to {
+    right: 0;
+    opacity: 1;
+  }
+}
+
+.custom-fadeInRight {
+  position: relative;
+  -webkit-animation: custom-fadeInRight 1.6s;
+  animation: custom-fadeInRight 1.6s;
+}

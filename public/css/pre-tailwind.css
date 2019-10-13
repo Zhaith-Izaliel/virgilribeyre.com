@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+
+.title {
+  @apply border-b-2 border-gray-500 mb-6 font-medium text-red-900
+}
+
+.subtitle {
+  @apply text-xl pb-16 text-blue-800;
+}
+
+.section-logo {
+  background-color: rgba(25, 53, 91, 0.9);
+  text-align: center;
+  box-shadow: 0px 0px 30px rgba(0,0,0,0.30);
+  @apply mx-auto px-4 py-1 w-auto text-white shadow-2xl;
+}
+
+.section-logo-wrapper {
+  @apply flex items-center justify-center opacity-75;
+}
+
+.section-logo-title {
+  letter-spacing: 0.5rem;
+}
+
+.input-info-alert {
+  @apply italic text-red-600 text-sm ml-2;
+}
+
+@tailwind utilities;
