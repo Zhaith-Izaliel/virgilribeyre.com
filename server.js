@@ -30,9 +30,9 @@ async function sendMailFromForm(first, last, email, message) {
 
   // create reusable transporter object using the default SMTP transport
   let transporter = Nodemailer.createTransport({
-    host: 'smtp.orange.fr',
-    port: 465,
-    secure: true, // true for 465, false for other ports
+    host: Config.emailHost,
+    port: Config.emailPort,
+    secure: Config.emailPort === 465, // true for 465, false for other ports
     auth: {
       user: Config.emailTransporter,
       pass: Config.emailPassword
