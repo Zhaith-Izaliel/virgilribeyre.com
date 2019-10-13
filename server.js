@@ -5,6 +5,7 @@ const Nodemailer = require('nodemailer');
 const Path = require('path');
 const BodyParser = require('body-parser');
 const Validator = require('validator');
+const Config = require('./config');
 
 //i18n
 const IndexFr = require("./i18n/index_fr");
@@ -13,10 +14,6 @@ const Er404Fr = require("./i18n/404_fr");
 const Er404En = require("./i18n/404_en");
 const CaptchaFr = require ("./i18n/captcha_fr");
 const CaptchaEn = require ("./i18n/captcha_en");
-
-//Email transporter/receiver
-const emailReceiver = "virgil.ribeyre@gmx.fr";
-const emailTransporter = "wertak25@orange.fr";
 
 //Captcha number range
 const min = 0;
@@ -37,13 +34,13 @@ async function sendMailFromForm(first, last, email, message) {
     port: 465,
     secure: true, // true for 465, false for other ports
     auth: {
-      user: emailTransporter,
-      pass: "*********"
+      user: Config.emailTransporter,
+      pass: Config.emailPassword
     }
   });
   let mailOptions = {
-      from: emailTransporter,
-      to: emailReceiver,
+      from: Config.emailTransporter,
+      to: Config.emailReceiver,
       replyTo: email,
       subject: first + " " + last + ", demande de contact depuis virgilribeyre.com.",
       text: message
@@ -175,6 +172,6 @@ app.get('*', function(req, res) {
 });
 
 
-app.listen(8080, function(){
+app.listen(Config.port, function(){
   console.log('Server running on 8080. Press CTRL+C to end the server.');
 });

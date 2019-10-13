@@ -23,8 +23,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "NODE_ENV=production npx pm2 start dist/lib/index.js
-    --name cv-web --env production -i 1",
+    "start": "NODE_ENV=production npx pm2 start server.js --name cv-web --env production -i 1",
      "stop": "NODE_ENV=production npx pm2 stop cv-web",
      "reload": "NODE_ENV=production npx pm2 reload"
   },
