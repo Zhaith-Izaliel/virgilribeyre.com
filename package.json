@@ -1,0 +1,44 @@
+{
+  "name": "cv-web",
+  "version": "1.0.0",
+  "description": "My beautiful CV",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "connect": "^3.7.0",
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "express-validator": "^6.2.0",
+    "muicss": "^0.9.43",
+    "nodemailer": "^6.3.0",
+    "nodemon": "^1.19.2",
+    "pug": "^2.0.4",
+    "serve-static": "^1.14.1",
+    "tailwindcss-transitions": "^2.1.0",
+    "tailwindcss": "^1.1.2",
+    "validator": "^11.1.0"
+  },
+  "devDependencies": {
+    "pm2": "^4.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "NODE_ENV=production npx pm2 start dist/lib/index.js
+    --name cv-web --env production -i 1",
+     "stop": "NODE_ENV=production npx pm2 stop cv-web",
+     "reload": "NODE_ENV=production npx pm2 reload"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zhaith-Izaliel/virgilribeyre.com.git"
+  },
+  "keywords": [
+    "CV"
+  ],
+  "author": "Virgil Ribeyre",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Zhaith-Izaliel/virgilribeyre.com/issues"
+  },
+  "homepage": "https://github.com/Zhaith-Izaliel/virgilribeyre.com#readme"
+}
