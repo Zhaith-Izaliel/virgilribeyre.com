@@ -173,5 +173,5 @@ app.get('*', function(req, res) {
 
 
 app.listen(Config.port, function(){
-  console.log('Server running on 8080. Press CTRL+C to end the server.');
+  console.log('Server running on'+Config.port+'. Press CTRL+C to end the server.');
 });
