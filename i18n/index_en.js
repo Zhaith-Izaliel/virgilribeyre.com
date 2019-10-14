@@ -54,9 +54,9 @@ module.exports = {
       },
       text2: " where player's evolution, in every match , is based on a skill tree mechanic, chosen at the begining of the game. I'm working on ",
       link1: "Unity - Personal Edition",
-      text3: ". Even though this project is currently untilted, it remains close to my heart and I want to conclude it, as a long project in Game Design. Forward, I want to compete to ",
+      text3: ". Even though this project is currently untitled, it remains close to my heart and I want to conclude it, as a long project in Game Design. Forward, I want to compete to ",
       link2: "Ludum Dare",
-      text4: " and other Games Jams gather experiences in this field."
+      text4: " and other Games Jams to gather experiences in this field."
     }
   },
   portfolio: {
@@ -64,7 +64,7 @@ module.exports = {
     header: "MY PROJECTS",
     subtitle: "Here is a sample of my work.",
     github: {
-      text1: "You can check my academic and personnal projects on ",
+      text1: "You can check my academic and personal projects on ",
       link: "GitHub",
       text2: "."
     }
@@ -107,7 +107,7 @@ module.exports = {
       title: "SKILLS DETAILS",
       skill1: {
         title: " Web Design",
-        text1: "I have Frontend skills with frameworks CSS (even plain CSS) like ",
+        text1: "I have front-end skills with frameworks CSS (even plain CSS) like ",
         em1: "Bootstrap",
         text2: ", ",
         em2: "W3.CSS",
@@ -120,7 +120,7 @@ module.exports = {
         text6: " and ",
         em6: "RxJS",
         text7: ".",
-        text8: "I can also develop in Backend with ",
+        text8: "I can also develop in back-end with ",
         em7: "AJAX",
         text9: ", ",
         em8: "PHP",
@@ -135,7 +135,7 @@ module.exports = {
         text1: "I can use ",
         em1: "Java",
         text2: " in mono-threaded programming in text-line.",
-        text3: "Correct knowledge in ",
+        text3: "Intermediate knowledge in ",
         em2: "C#",
         text4: " that I use in ",
         em3: "Unity",
@@ -154,7 +154,7 @@ module.exports = {
         text2: " and ",
         em2: "Arch Linux",
         text3: ".",
-        text4: "Correct knowledge in ",
+        text4: "Intermediate knowledge in ",
         em3: "Bash",
         text5: "."
       },
@@ -171,7 +171,7 @@ module.exports = {
 
   experiences: {
     title: "EXPERIENCES",
-    header: "PROFESSIONNAL EXPERIENCES",
+    header: "PROFESSIONAL EXPERIENCES",
     subtitle: "I've worked in:",
     exps: {
       exp2: {
@@ -211,8 +211,8 @@ module.exports = {
       mail: " Email",
       message: " Message",
       send: " SEND",
-      firstInvalid: "Please, enter you first name.",
-      lastInvalid: "Please, enter you last name.",
+      firstInvalid: "Please, enter your first name.",
+      lastInvalid: "Please, enter your last name.",
       emailInvalid: "Please, enter a valid email address.",
       messageInvalid: "Your message is empty.",
       captchaInvalid: "You've made a mistake in the Captcha.",
