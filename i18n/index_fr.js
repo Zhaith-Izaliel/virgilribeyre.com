@@ -52,7 +52,7 @@ module.exports = {
         text: "MOBA",
         infos: "Arène de Combat Multijoueur en Ligne."
       },
-      text2: " dont l'évolution du joueur se base sur un système d'arbre de compétences choisit au début de chaque match. Je travaille sur le moteur ",
+      text2: " dont l'évolution du joueur se base sur un système d'arbre de compétences choisi au début de chaque match. Je travaille sur le moteur ",
       link1: "Unity - Personal Edition",
       text3: ". Si ce projet ne possède toujours pas de nom, ni de visuel à présenter à l'heure actuelle, il me tient à cœur et je souhaite le mener à bien, comme long projet en Game Design. À terme, je compte participer à des ",
       link2: "Ludum Dare",

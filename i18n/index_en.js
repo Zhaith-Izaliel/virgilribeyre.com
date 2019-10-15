@@ -100,7 +100,7 @@ module.exports = {
       bar1: "Web Design",
       bar2: "Oriented Object Programming",
       bar3: "Imperative Programming",
-      bar4: "Linux Environnements",
+      bar4: "Linux Environments",
       bar5: "Unity"
     },
     modal: {
@@ -148,8 +148,8 @@ module.exports = {
         text2: "."
       },
       skill4: {
-        title: " Linux Environnements",
-        text1: "Advanced knowledge on Linux environnements, particularly on ",
+        title: " Linux Environments",
+        text1: "Advanced knowledge on Linux environments, particularly on ",
         em1: "Ubuntu",
         text2: " and ",
         em2: "Arch Linux",
@@ -162,7 +162,7 @@ module.exports = {
         title: " Unity",
         text1: "Advanced mastery of ",
         em1: "Unity",
-        text2: "on 2D projects."
+        text2: " on 2D projects."
       },
       close: "CLOSE"
     },
