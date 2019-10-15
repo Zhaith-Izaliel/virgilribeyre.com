@@ -285,6 +285,10 @@ body, html {
   font-size: 1rem;
 }
 
+.form-field:focus, .form-field-invalid:focus, .form-message:focus {
+  box-shadow: none;
+}
+
 .form-textfield .form-field:focus, .form-textfield .form-field:valid {
   border-color: #1565C0;
 }
@@ -335,6 +339,7 @@ body, html {
 
 .form-message:focus {
   border-color: #1565C0;
+  box-shadow: none;
 }
 
 .form-message-wrapper .form-message:focus ~ .message-label {
@@ -359,6 +364,7 @@ body, html {
 
 .form-message-invalid:focus {
   border-color: #c62828;
+  box-shadow: none;
 }
 
 .form-message-wrapper .form-message-invalid:focus ~ .message-label {
@@ -375,7 +381,6 @@ body, html {
   box-shadow: none;
   z-index: 1;
   background-color: transparent;
-
 }
 
 .form-message-wrapper .form-message-invalid ~ .message-label {
