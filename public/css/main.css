@@ -6,6 +6,11 @@ body, html {
   color: #34495e;
 }
 
+input, textarea {
+  outline: none;
+  box-shadow: none;
+}
+
 #myNavbar {
   box-sizing: inherit;
   overflow: hidden;
@@ -283,10 +288,6 @@ body, html {
   top: 20%;
   left: -2%;
   font-size: 1rem;
-}
-
-.form-field:focus, .form-field-invalid:focus, .form-message:focus {
-  box-shadow: none;
 }
 
 .form-textfield .form-field:focus, .form-textfield .form-field:valid {
