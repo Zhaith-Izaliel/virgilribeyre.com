@@ -172,7 +172,6 @@ module.exports = {
   experiences: {
     title: "EXPERIENCES",
     header: "EXPERIENCES PROFESSIONNELLES",
-    subtitle: "J'ai travaillé dans:",
     exps: {
       exp2: {
         title: "Rattrapage Scolaire",
