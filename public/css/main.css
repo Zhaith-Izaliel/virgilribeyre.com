@@ -345,7 +345,7 @@ input, textarea {
 
 .form-message-wrapper .form-message:focus ~ .message-label {
   color: #1565C0;
-  top: 5%;
+  top: 0%;
   left: -2%;
   font-size: 1rem;
 }
@@ -356,7 +356,7 @@ input, textarea {
 
 .form-message-wrapper .form-message:valid ~ .message-label {
   color: #1565C0;
-  top: 5%;
+  top: 0%;
   left: -2%;
   font-size: 1rem;
 }
@@ -370,7 +370,7 @@ input, textarea {
 
 .form-message-wrapper .form-message-invalid:focus ~ .message-label {
   color: #c62828;
-  top: 5%;
+  top: 0%;
   left: -2%;
   font-size: 1rem;
 }
@@ -390,7 +390,7 @@ input, textarea {
 
 .form-message-wrapper .form-message-invalid:valid ~ .message-label {
   color: #c62828;
-  top: 5%;
+  top: 0%;
   left: -2%;
   font-size: 1rem;
 }
