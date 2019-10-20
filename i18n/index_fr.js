@@ -34,7 +34,7 @@ module.exports = {
       link: "MIAGE",
       text4: "). Je suis passionné de ",
       em3: "Game Design",
-      text5: " et compte en faire mon activité principale.Je possède des compétences en ",
+      text5: " et compte en faire mon activité principale. Je possède des compétences en ",
       em4: "Web Design",
       text6: " obtenues en auto-formation et dans mon cursus scolaire."
 
