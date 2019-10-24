@@ -56,7 +56,7 @@ module.exports = {
       link1: "Unity - Personal Edition",
       text3: ". Even though this project is currently untitled, it remains close to my heart and I want to conclude it, as a long project in Game Design. Forward, I want to compete to ",
       link2: "Ludum Dare",
-      text4: " and other Games Jams to gather experiences in this field."
+      text4: " and other Game Jams to gather experiences in this field."
     }
   },
   portfolio: {
