@@ -26,7 +26,7 @@ module.exports = {
     },
     infos: {
       text1: "J'étudie actuellement en Licence de ",
-      em1: "Méthodes Informatiques Appliquée aux Sciences Humaines et Sociales ",
+      em1: "Mathématiques et Informatique Appliquées aux Sciences Humaines et Sociales ",
       i1: "(MIASHS)",
       text2: ", parcours ",
       em2: "Méthodes Informatiques Appliquées à la Gestion des Entreprises",
