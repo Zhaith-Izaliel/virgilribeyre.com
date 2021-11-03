@@ -16,7 +16,7 @@
     "serve-static": "^1.14.1",
     "tailwindcss-transitions": "^2.1.0",
     "tailwindcss": "^1.1.2",
-    "validator": "^11.1.0"
+    "validator": "^13.7.0"
   },
   "devDependencies": {
     "pm2": "^4.0.0"
