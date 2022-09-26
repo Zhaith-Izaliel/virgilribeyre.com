@@ -19,7 +19,7 @@
     "validator": "^11.1.0"
   },
   "devDependencies": {
-    "pm2": "^4.0.0"
+    "pm2": "^5.2.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
